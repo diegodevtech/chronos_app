@@ -48,8 +48,10 @@ export function TaskContextProvider({ children }: TaskContextProviderProps) {
   useEffect(() => {
     localStorage.setItem('state', JSON.stringify(state));
     if (!state.activeTask) worker.terminate();
+    if (state.activeTask) {
+      document.title = `${state.formattedSecondsRemaining} - Chronos App`;
+    }
     // PASSAR O ESTADO PARA DENTRO DO WORKER
-    document.title = `${state.formattedSecondsRemaining} - Chronos App`;
     worker.postMessage(state);
   }, [worker, state]);
 
