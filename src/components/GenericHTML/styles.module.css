@@ -1,0 +1,46 @@
+.genericHTML h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.genericHTML h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.genericHTML h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.genericHTML p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.genericHTML a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.genericHTML a:hover {
+  text-decoration: underline;
+}
+
+.genericHTML ul {
+  padding-left: 1.5rem;
+}
+
+.genericHTML li {
+  margin-bottom: 0.5rem;
+}
+
+.genericHTML img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1rem 0;
+}
